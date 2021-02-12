@@ -17,6 +17,10 @@ interface ResourceValueRepository
 
     public function add(ResourceValue $resourceValue): void;
 
+    /**
+     * @param ResourceValue $resourceValue
+     * @deprecated since 2.1, use ResourceValueRepository::add() instead
+     */
     public function save(ResourceValue $resourceValue): void;
 
     public function remove(ResourceValue $resourceValue): void;
